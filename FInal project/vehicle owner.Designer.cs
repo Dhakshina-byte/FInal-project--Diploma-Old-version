@@ -1,6 +1,6 @@
 ﻿namespace FInal_project
 {
-    partial class Add_Service_Head
+    partial class vehicle_owner
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Service_Head));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(vehicle_owner));
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -65,11 +65,11 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(72, 173);
+            this.label9.Location = new System.Drawing.Point(61, 166);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 46);
-            this.label9.TabIndex = 52;
-            this.label9.Text = "Service Head\r\nDetails";
+            this.label9.Size = new System.Drawing.Size(160, 46);
+            this.label9.TabIndex = 64;
+            this.label9.Text = "Vehicle Owner\r\nDetails";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
@@ -92,7 +92,7 @@
             this.panel1.Location = new System.Drawing.Point(276, 325);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(867, 283);
-            this.panel1.TabIndex = 51;
+            this.panel1.TabIndex = 63;
             // 
             // textBox7
             // 
@@ -216,29 +216,29 @@
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(275, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 22);
+            this.label2.Size = new System.Drawing.Size(188, 22);
             this.label2.TabIndex = 26;
-            this.label2.Text = "Service Head ID :";
+            this.label2.Text = "Vehicle Owner ID :";
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
             this.button6.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(439, 242);
+            this.button6.Location = new System.Drawing.Point(459, 242);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(111, 40);
-            this.button6.TabIndex = 50;
+            this.button6.TabIndex = 62;
             this.button6.Text = "⌕ Search";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(276, 242);
+            this.textBox8.Location = new System.Drawing.Point(296, 242);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(147, 35);
-            this.textBox8.TabIndex = 49;
+            this.textBox8.TabIndex = 61;
             // 
             // button5
             // 
@@ -248,10 +248,9 @@
             this.button5.Location = new System.Drawing.Point(12, 528);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(258, 64);
-            this.button5.TabIndex = 48;
+            this.button5.TabIndex = 60;
             this.button5.Text = "◀️ Back";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -261,7 +260,7 @@
             this.label1.Location = new System.Drawing.Point(47, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 20);
-            this.label1.TabIndex = 47;
+            this.label1.TabIndex = 59;
             this.label1.Text = "Go Future";
             // 
             // pictureBox1
@@ -272,7 +271,7 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
             // button4
@@ -283,8 +282,8 @@
             this.button4.Location = new System.Drawing.Point(12, 402);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(258, 64);
-            this.button4.TabIndex = 45;
-            this.button4.Text = "❌ Delete Service Head";
+            this.button4.TabIndex = 57;
+            this.button4.Text = "❌ Delete Vehicle Owner";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -295,8 +294,8 @@
             this.button3.Location = new System.Drawing.Point(12, 322);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(258, 64);
-            this.button3.TabIndex = 44;
-            this.button3.Text = "📝 Update Service Head";
+            this.button3.TabIndex = 56;
+            this.button3.Text = "📝 Update Vehicle Owner";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -307,8 +306,8 @@
             this.button2.Location = new System.Drawing.Point(12, 242);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(258, 64);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "➕Add New Service Head";
+            this.button2.TabIndex = 55;
+            this.button2.Text = "➕Add Vehicle Owner";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -319,7 +318,7 @@
             this.button1.Location = new System.Drawing.Point(1017, 235);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 40);
-            this.button1.TabIndex = 42;
+            this.button1.TabIndex = 54;
             this.button1.Text = "☰ View";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -331,9 +330,9 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(867, 210);
-            this.dataGridView1.TabIndex = 41;
+            this.dataGridView1.TabIndex = 53;
             // 
-            // Add_Service_Head
+            // vehicle_owner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -351,9 +350,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Add_Service_Head";
-            this.Text = "Add_Service_Head";
-            this.Load += new System.EventHandler(this.Add_Service_Head_Load);
+            this.Name = "vehicle_owner";
+            this.Text = "vehicle_owner";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

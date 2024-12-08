@@ -52,12 +52,12 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -343,6 +343,18 @@
             this.button8.Text = "Add Vehicle Price";
             this.button8.UseVisualStyleBackColor = false;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.button10.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.button10.Location = new System.Drawing.Point(33, 190);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(219, 56);
+            this.button10.TabIndex = 15;
+            this.button10.Text = "Update Vehicle Price";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(174)))), ((int)(((byte)(201)))));
@@ -395,18 +407,6 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Time";
             this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button10.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button10.Location = new System.Drawing.Point(33, 190);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(219, 56);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Update Vehicle Price";
-            this.button10.UseVisualStyleBackColor = false;
             // 
             // CEO_Dashbord
             // 
@@ -464,6 +464,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
@@ -475,6 +476,5 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button10;
     }
 }

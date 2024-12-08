@@ -18,6 +18,11 @@ namespace FInal_project
         {
             InitializeComponent();
         }
+        public SqlConnection con;
+        public SqlCommand cmd;
+        public SqlDataReader dr;
+        public string UN;
+        public string PW;
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -31,7 +36,8 @@ namespace FInal_project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            con = new SqlConnection();
+            con.ConnectionString = "Data Source =OM3GA;Initial Catalog= CarSales&ServiceMangementSystem;Integrated Security =True";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,31 +46,43 @@ namespace FInal_project
             textBox1.Clear();
             textBox2.Clear();
 
-            // Show message box if login is successful
-            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+       
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //connection
-            string cs = "Data Source=THINKBOOK;Initial Catalog=Ford;Integrated Security=True";
-            SqlConnection con = new SqlConnection(cs);
-            con.Open();
-            string query = "select * from Login where username = '" + textBox1.Text + "' and password = '" + textBox2.Text + "'";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
+            cmd = new SqlCommand("SELECT userID, username,passwords,jobTitle.jobname FROM Users INNER JOIN jobTitle ON Users.userID = jobTitle.jobId where username=@username and passwords=@password;", con);
+            cmd.Parameters.AddWithValue("@username", textBox1.Text);
+            cmd.Parameters.AddWithValue("@password", textBox2.Text);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                CEO_Dashbord cd = new CEO_Dashbord();
-                cd.Show();
-                this.Hide();
+
+                string usertype = dt.Rows[0][3].ToString();
+
+                if (usertype == "CEO")
+                {
+                    this.Hide();
+                    CEO_Dashbord cd = new CEO_Dashbord();
+                    cd.Show();
+                }
+                else if (usertype == "non")
+                {
+                    MessageBox.Show("wel non");
+                }
+                else
+                {
+                    MessageBox.Show("not found");
+                }
             }
             else
             {
-                MessageBox.Show("Login failed!", "Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid username or password");
             }
 
+            con.Close();
         }
     }
 }

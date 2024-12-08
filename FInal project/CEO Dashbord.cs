@@ -54,7 +54,7 @@ namespace FInal_project
             //LogOut 
             this.Hide();
             Login loginForm = new Login();
-            loginForm.ShowDialog();
+            loginForm.Show();
             this.Close();
         }
 

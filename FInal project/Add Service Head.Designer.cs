@@ -235,9 +235,9 @@
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(305, 242);
+            this.textBox8.Location = new System.Drawing.Point(276, 242);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(118, 35);
+            this.textBox8.Size = new System.Drawing.Size(147, 35);
             this.textBox8.TabIndex = 49;
             // 
             // button5

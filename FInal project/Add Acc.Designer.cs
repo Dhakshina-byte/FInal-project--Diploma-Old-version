@@ -102,6 +102,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "📝 Update Accountant";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -114,6 +115,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "❌ Delete Accountant";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -169,6 +171,7 @@
             this.button6.TabIndex = 27;
             this.button6.Text = "⌕ Search";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel1
             // 

@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Service_Head));
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCity = new System.Windows.Forms.TextBox();
+            this.tbAddress = new System.Windows.Forms.TextBox();
+            this.tbDOB = new System.Windows.Forms.TextBox();
+            this.tbMobile = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.tbService = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,15 +45,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAddNew = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -75,13 +75,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(174)))), ((int)(((byte)(201)))));
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbCity);
+            this.panel1.Controls.Add(this.tbAddress);
+            this.panel1.Controls.Add(this.tbDOB);
+            this.panel1.Controls.Add(this.tbMobile);
+            this.panel1.Controls.Add(this.tbEmail);
+            this.panel1.Controls.Add(this.tbName);
+            this.panel1.Controls.Add(this.tbService);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -94,61 +94,62 @@
             this.panel1.Size = new System.Drawing.Size(867, 283);
             this.panel1.TabIndex = 51;
             // 
-            // textBox7
+            // tbCity
             // 
-            this.textBox7.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(106, 229);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(222, 35);
-            this.textBox7.TabIndex = 39;
+            this.tbCity.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCity.Location = new System.Drawing.Point(106, 229);
+            this.tbCity.Name = "tbCity";
+            this.tbCity.Size = new System.Drawing.Size(222, 35);
+            this.tbCity.TabIndex = 39;
             // 
-            // textBox6
+            // tbAddress
             // 
-            this.textBox6.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(501, 229);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(329, 35);
-            this.textBox6.TabIndex = 38;
+            this.tbAddress.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAddress.Location = new System.Drawing.Point(501, 229);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(329, 35);
+            this.tbAddress.TabIndex = 38;
             // 
-            // textBox5
+            // tbDOB
             // 
-            this.textBox5.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(516, 161);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(314, 35);
-            this.textBox5.TabIndex = 37;
+            this.tbDOB.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDOB.Location = new System.Drawing.Point(516, 161);
+            this.tbDOB.Name = "tbDOB";
+            this.tbDOB.Size = new System.Drawing.Size(314, 35);
+            this.tbDOB.TabIndex = 37;
+            this.tbDOB.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
-            // textBox4
+            // tbMobile
             // 
-            this.textBox4.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(106, 161);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 35);
-            this.textBox4.TabIndex = 36;
+            this.tbMobile.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbMobile.Location = new System.Drawing.Point(106, 161);
+            this.tbMobile.Name = "tbMobile";
+            this.tbMobile.Size = new System.Drawing.Size(222, 35);
+            this.tbMobile.TabIndex = 36;
             // 
-            // textBox3
+            // tbEmail
             // 
-            this.textBox3.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(501, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(329, 35);
-            this.textBox3.TabIndex = 35;
+            this.tbEmail.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Location = new System.Drawing.Point(501, 102);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(329, 35);
+            this.tbEmail.TabIndex = 35;
             // 
-            // textBox2
+            // tbName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(106, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 35);
-            this.textBox2.TabIndex = 34;
+            this.tbName.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbName.Location = new System.Drawing.Point(106, 102);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(222, 35);
+            this.tbName.TabIndex = 34;
             // 
-            // textBox1
+            // tbService
             // 
-            this.textBox1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(465, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 35);
-            this.textBox1.TabIndex = 33;
+            this.tbService.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbService.Location = new System.Drawing.Point(465, 15);
+            this.tbService.Name = "tbService";
+            this.tbService.Size = new System.Drawing.Size(156, 35);
+            this.tbService.TabIndex = 33;
             // 
             // label8
             // 
@@ -220,38 +221,38 @@
             this.label2.TabIndex = 26;
             this.label2.Text = "Service Head ID :";
             // 
-            // button6
+            // btnSearch
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button6.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(439, 242);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 40);
-            this.button6.TabIndex = 50;
-            this.button6.Text = "⌕ Search";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnSearch.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(439, 242);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(111, 40);
+            this.btnSearch.TabIndex = 50;
+            this.btnSearch.Text = "⌕ Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // textBox8
+            // tbSearch
             // 
-            this.textBox8.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(276, 242);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(147, 35);
-            this.textBox8.TabIndex = 49;
+            this.tbSearch.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Location = new System.Drawing.Point(276, 242);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(147, 35);
+            this.tbSearch.TabIndex = 49;
             // 
-            // button5
+            // btnBack
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button5.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(12, 528);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(258, 64);
-            this.button5.TabIndex = 48;
-            this.button5.Text = "◀️ Back";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnBack.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(12, 528);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(258, 64);
+            this.btnBack.TabIndex = 48;
+            this.btnBack.Text = "◀️ Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
@@ -275,53 +276,53 @@
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
-            // button4
+            // btnDelete
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button4.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(12, 402);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(258, 64);
-            this.button4.TabIndex = 45;
-            this.button4.Text = "❌ Delete Service Head";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnDelete.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(12, 402);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(258, 64);
+            this.btnDelete.TabIndex = 45;
+            this.btnDelete.Text = "❌ Delete Service Head";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnUpdate
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button3.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 322);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(258, 64);
-            this.button3.TabIndex = 44;
-            this.button3.Text = "📝 Update Service Head";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(12, 322);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(258, 64);
+            this.btnUpdate.TabIndex = 44;
+            this.btnUpdate.Text = "📝 Update Service Head";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAddNew
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(12, 242);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(258, 64);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "➕Add New Service Head";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAddNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnAddNew.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNew.ForeColor = System.Drawing.Color.White;
+            this.btnAddNew.Location = new System.Drawing.Point(12, 242);
+            this.btnAddNew.Name = "btnAddNew";
+            this.btnAddNew.Size = new System.Drawing.Size(258, 64);
+            this.btnAddNew.TabIndex = 43;
+            this.btnAddNew.Text = "➕Add New Service Head";
+            this.btnAddNew.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnView
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1017, 235);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 40);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "☰ View";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnView.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.White;
+            this.btnView.Location = new System.Drawing.Point(1017, 235);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(111, 40);
+            this.btnView.TabIndex = 42;
+            this.btnView.Text = "☰ View";
+            this.btnView.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -341,15 +342,15 @@
             this.ClientSize = new System.Drawing.Size(1155, 627);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.tbSearch);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnAddNew);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Add_Service_Head";
             this.Text = "Add_Service_Head";
@@ -367,13 +368,13 @@
 
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCity;
+        private System.Windows.Forms.TextBox tbAddress;
+        private System.Windows.Forms.TextBox tbDOB;
+        private System.Windows.Forms.TextBox tbMobile;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.TextBox tbService;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -381,15 +382,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAddNew;
+        private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -30,5 +30,10 @@ namespace FInal_project
             //hide form close button
             this.ControlBox = false;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

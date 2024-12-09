@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(service_details));
             this.label9 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -53,38 +53,38 @@
             this.label9.Text = "Service Details\r\n";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button6
+            // btnSearch
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button6.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(1008, 101);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 40);
-            this.button6.TabIndex = 39;
-            this.button6.Text = "⌕ Search";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnSearch.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(1008, 101);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(111, 40);
+            this.btnSearch.TabIndex = 39;
+            this.btnSearch.Text = "⌕ Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
-            // textBox8
+            // tbSearch
             // 
-            this.textBox8.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(783, 106);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(201, 35);
-            this.textBox8.TabIndex = 38;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.tbSearch.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearch.Location = new System.Drawing.Point(783, 106);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(201, 35);
+            this.tbSearch.TabIndex = 38;
+            this.tbSearch.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
-            // button5
+            // btnBack
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button5.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(12, 551);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(206, 64);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "◀️ Back";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnBack.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(12, 551);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(206, 64);
+            this.btnBack.TabIndex = 37;
+            this.btnBack.Text = "◀️ Back";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -108,17 +108,17 @@
             this.pictureBox1.TabIndex = 35;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnView
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(937, 551);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 64);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "☰ View";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnView.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.White;
+            this.btnView.Location = new System.Drawing.Point(937, 551);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(206, 64);
+            this.btnView.TabIndex = 31;
+            this.btnView.Text = "☰ View";
+            this.btnView.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -137,12 +137,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(1155, 627);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.tbSearch);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.dataGridView1);
             this.Name = "service_details";
             this.Text = "service_details";
@@ -156,12 +156,12 @@
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

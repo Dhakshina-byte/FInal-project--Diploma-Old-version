@@ -53,9 +53,9 @@
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(377, 12);
+            this.panel1.Location = new System.Drawing.Point(386, 84);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(335, 333);
+            this.panel1.Size = new System.Drawing.Size(344, 353);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -104,7 +104,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(162, 87);
+            this.textBox1.Location = new System.Drawing.Point(162, 90);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 32);
             this.textBox1.TabIndex = 2;

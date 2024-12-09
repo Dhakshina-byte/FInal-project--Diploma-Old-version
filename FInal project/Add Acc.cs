@@ -33,7 +33,7 @@ namespace FInal_project
         string PW;
         string gender;
         string DOB;
-
+        int newUserID;
 
         public void Data()
         {
@@ -57,6 +57,22 @@ namespace FInal_project
             DOB = dateTimePicker1.Text; 
             UN = textBox5.Text;
             PW = textBox9.Text;
+        }
+        public void add() 
+        {
+            cmd.Parameters.AddWithValue("EID", EID);
+            cmd.Parameters.AddWithValue("Fname", Fname);
+            cmd.Parameters.AddWithValue("Lname", Lname);
+            cmd.Parameters.AddWithValue("Moblie", Moblie);
+            cmd.Parameters.AddWithValue("NIC", NIC);
+            cmd.Parameters.AddWithValue("Email", Email);
+            cmd.Parameters.AddWithValue("gender", gender);
+            cmd.Parameters.AddWithValue("address", address);
+            cmd.Parameters.AddWithValue("DOB", DOB);
+            cmd.Parameters.AddWithValue("UN", UN);
+            cmd.Parameters.AddWithValue("PW", PW);
+            cmd.Parameters.AddWithValue("usi", newUserID);
+;
         }
 
         private void Add_Acc_Load(object sender, EventArgs e)
@@ -119,9 +135,25 @@ namespace FInal_project
 
         private void button2_Click(object sender, EventArgs e)
         {
+            varible();
+            con.Open();
+            cmd = new SqlCommand("SELECT MAX(userID)FROM Users;", con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            int userID = Convert.ToInt32(dt.Rows[0][0]);
+            newUserID = ++userID;
 
-           cmd = new SqlCommand("INSERT INTO Users(userID,username,passwords,jobId) VALUES (1,'Hemantha','Hemantha12',1);",con);
-            cmd = new SqlCommand("INSERT INTO Employee(emp_id, emp_fname,emp_lname,NIC_ID, E_mail,DOB,mobile_number, gender,userID,department_ID, jobID,EAddress)VALUES (@EID,@Fname,@Lname,@NIC,@Email,@DOB,@Moblie,@gender,@address,1,2,2);", con);
+            cmd = new SqlCommand("INSERT INTO Users(userID,username,passwords,jobId) VALUES (@usi,@UN,@PW,1);", con);
+            add();
+            cmd.ExecuteNonQuery();
+            cmd = new SqlCommand("INSERT INTO Employee(emp_id, emp_fname,emp_lname,NIC_ID, E_mail,DOB,mobile_number, gender,userID,department_ID,jobID,EAddress)VALUES (@EID,@Fname,@Lname,@NIC,@Email,@DOB,@Moblie,@gender,@usi,1,2,@address);", con);
+            add();
+            
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Record Updated -  Done!!!");
+            Data();
+            con.Close();
         }
 
         private void label3_Click(object sender, EventArgs e)

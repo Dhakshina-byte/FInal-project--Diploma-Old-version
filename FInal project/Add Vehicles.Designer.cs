@@ -1,4 +1,6 @@
-﻿namespace FInal_project
+﻿using System;
+
+namespace FInal_project
 {
     partial class Add_Vehicles
     {
@@ -316,6 +318,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

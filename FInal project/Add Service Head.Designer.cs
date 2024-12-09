@@ -1,4 +1,6 @@
-﻿namespace FInal_project
+﻿using System;
+
+namespace FInal_project
 {
     partial class Add_Service_Head
     {
@@ -362,6 +364,16 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

@@ -62,9 +62,10 @@ namespace FInal_project
         {
             //hide form close button
             this.ControlBox = false;
-            con = new SqlConnection();
-            con.ConnectionString = "Data Source =OM3GA;Initial Catalog= CarSales&ServiceMangementSystem;Integrated Security =True";
+            con = DatabaseConnection.Instance.GetConnection();
+            con.Open();
             Data();
+            con.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

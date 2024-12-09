@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,17 +47,17 @@ namespace FInal_project
         }
         public void varible()
         {
-            EID = Convert.ToInt32(tbId.Text);
-            Fname = tbFirstName.Text;
-            Lname = tbLastName.Text;
-            Moblie = Convert.ToInt32(tbMobile.Text);
-            NIC = tbNic.Text;
-            Email = tbEmail.Text;
-            gender = cbGender.Text;
-            address = tbAddress.Text;
+            EID = Convert.ToInt32(textBox1.Text);
+            Fname = textBox2.Text;
+            Lname = textBox3.Text;
+            Moblie = Convert.ToInt32(textBox4.Text);
+            NIC = textBox7.Text;
+            Email = textBox10.Text;
+            gender = comboBox1.Text;
+            address = textBox6.Text;
             DOB = dateTimePicker1.Text; 
-            UN = tbUsername.Text;
-            PW = tbPassword.Text;
+            UN = textBox5.Text;
+            PW = textBox9.Text;
         }
         public void add() 
         {
@@ -74,15 +75,28 @@ namespace FInal_project
             cmd.Parameters.AddWithValue("usi", newUserID);
 ;
         }
+        public void clear()
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox7.Text = "";
+            textBox10.Text = "";
+            comboBox1.Text = "";
+            textBox6.Text = "";
+            dateTimePicker1.Text = "";
+            textBox5.Text = "";
+            textBox9.Text = "";
+        }
 
         private void Add_Acc_Load(object sender, EventArgs e)
         {
             //hide form close button
             this.ControlBox = false;
-            con = DatabaseConnection.Instance.GetConnection();
-            con.Open();
+            con = new SqlConnection();
+            con.ConnectionString = "Data Source =OM3GA;Initial Catalog= CarSales&ServiceMangementSystem;Integrated Security =True";
             Data();
-            con.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -149,10 +163,10 @@ namespace FInal_project
             cmd.ExecuteNonQuery();
             cmd = new SqlCommand("INSERT INTO Employee(emp_id, emp_fname,emp_lname,NIC_ID, E_mail,DOB,mobile_number, gender,userID,department_ID,jobID,EAddress)VALUES (@EID,@Fname,@Lname,@NIC,@Email,@DOB,@Moblie,@gender,@usi,1,2,@address);", con);
             add();
-            
             cmd.ExecuteNonQuery();
             MessageBox.Show("Record Updated -  Done!!!");
             Data();
+            clear();
             con.Close();
         }
 
@@ -166,9 +180,91 @@ namespace FInal_project
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
+            if (textBox8.Text == "")
+            {
+                Data();
+            }
+            else
+            {
+                SqlCommand cmd = new SqlCommand("SELECT Employee.emp_id , Employee.emp_fname ,Employee.emp_lname,Employee.NIC_ID,Employee.E_mail,Employee.DOB, Employee.mobile_number, Employee.gender,Employee.EAddress,jobTitle.jobname,Users. username,Users.passwords,Department.department_name,Department.location_name FROM Employee INNER JOIN jobTitle  ON  Employee.jobId = jobTitle.jobId INNER JOIN Users ON Employee.userID = Users.userID INNER JOIN Department ON Employee.department_ID = Department.department_id  WHERE jobTitle.jobname ='Accountant'AND Employee.emp_id = @EID", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                EID = Convert.ToInt32(textBox8.Text);
+                cmd.Parameters.AddWithValue("EID", EID);
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+               
+                while (dr.Read())
+                {
+                    textBox1.Text = dr["emp_id"].ToString();
+                    textBox2.Text = dr["emp_fname"].ToString();
+                    textBox3.Text = dr["emp_lname"].ToString();
+                    textBox4.Text = dr["mobile_number"].ToString();
+                    textBox7.Text = dr["NIC_ID"].ToString();
+                    textBox10.Text = dr["E_mail"].ToString();
+                    comboBox1.Text = dr["gender"].ToString();
+                    textBox6.Text = dr["EAddress"].ToString();
+                    dateTimePicker1.Text = dr["DOB"].ToString();
+                    textBox5.Text = dr["username"].ToString();
+                    textBox9.Text = dr["passwords"].ToString();
+                }
+                con.Close();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Open();
+            }
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            con.Close();
+           
+            varible();
+            con.Open();
+            cmd = new SqlCommand("SELECT userID FROM Employee WHERE Employee.emp_id = @EID;", con);
+            add();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            int userID = Convert.ToInt32(dt.Rows[0][0]);
+            newUserID = userID;
+            cmd = new SqlCommand("Update Users set username=@UN,passwords=@PW,jobId =2 where userID = @usi", con);
+            add();
+            cmd.ExecuteNonQuery();
+            cmd = new SqlCommand("Update Employee set emp_fname=@Fname,emp_lname=@Lname,NIC_ID=@NIC,E_mail=@Email,DOB=@DOB,mobile_number=@Moblie,gender=@gender,userID=@usi,jobId =2,department_ID=1,EAddress=@address where emp_id = @EID;", con);
+            add();
+            cmd.ExecuteNonQuery();
+            Data();
+            clear();
+            con.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            con.Close();
+            con.Open();
+            EID = Convert.ToInt32(textBox8.Text);
+            cmd = new SqlCommand("SELECT userID FROM Employee WHERE Employee.emp_id = @EID;", con);
+            add();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            int userID = Convert.ToInt32(dt.Rows[0][0]);
+            newUserID = userID;
+            cmd = new SqlCommand("Delete  Employee WHERE Employee.emp_id = @EID;", con);
+            cmd.Parameters.AddWithValue("EID", EID);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            con.Open();
+            cmd = new SqlCommand("Delete Users  where userID = @usi", con);
+            add();
+            cmd.ExecuteNonQuery();
+            Data();
+            MessageBox.Show("Record Deleted - Done!!!");
+            clear();
+            con.Close();
         }
     }
 }

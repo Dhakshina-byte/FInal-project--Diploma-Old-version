@@ -106,6 +106,11 @@ namespace FInal_project
             }
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void clearTextBoxes()
         {
             tbServiceId.Clear();

@@ -30,5 +30,15 @@ namespace FInal_project
             CEO_Dashbord cd = new CEO_Dashbord();
             cd.ShowDialog();
         }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

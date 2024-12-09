@@ -46,7 +46,10 @@ namespace FInal_project
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            //click report button and go to reports form
+            this.Hide();
+            Reports add_im = new Reports();
+            add_im.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,7 +102,18 @@ namespace FInal_project
 
         private void button4_Click(object sender, EventArgs e)
         {
+            //click service details button and go to service details form
+            this.Hide();
+            service_details add_im = new service_details();
+            add_im.ShowDialog();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //click sales details button and go to sales details form
+            this.Hide();
+            Sales_details add_im = new Sales_details();
+            add_im.ShowDialog();
         }
     }
 }

@@ -70,11 +70,35 @@
     <Compile Include="Add Service Head.Designer.cs">
       <DependentUpon>Add Service Head.cs</DependentUpon>
     </Compile>
+    <Compile Include="Annual sales report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual sales report.Designer.cs">
+      <DependentUpon>Annual sales report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annual service report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual service report.Designer.cs">
+      <DependentUpon>Annual service report.cs</DependentUpon>
+    </Compile>
     <Compile Include="CEO Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CEO Dashbord.Designer.cs">
       <DependentUpon>CEO Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Vehicles.Designer.cs">
+      <DependentUpon>Add Vehicles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory report.Designer.cs">
+      <DependentUpon>Inventory report.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -82,8 +106,57 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Monthly Sales Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly Sales Report.Designer.cs">
+      <DependentUpon>Monthly Sales Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monthly service report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monthly service report.Designer.cs">
+      <DependentUpon>Monthly service report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Net profit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Net profit.Designer.cs">
+      <DependentUpon>Net profit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales details.Designer.cs">
+      <DependentUpon>Sales details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="service details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service details.Designer.cs">
+      <DependentUpon>service details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="test drive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test drive.Designer.cs">
+      <DependentUpon>test drive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vehicle owner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicle owner.Designer.cs">
+      <DependentUpon>vehicle owner.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add Acc.resx">
       <DependentUpon>Add Acc.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,11 +169,32 @@
     <EmbeddedResource Include="Add Service Head.resx">
       <DependentUpon>Add Service Head.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add Vehicles.resx">
+      <DependentUpon>Add Vehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual sales report.resx">
+      <DependentUpon>Annual sales report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual service report.resx">
+      <DependentUpon>Annual service report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CEO Dashbord.resx">
       <DependentUpon>CEO Dashbord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory report.resx">
+      <DependentUpon>Inventory report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly Sales Report.resx">
+      <DependentUpon>Monthly Sales Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monthly service report.resx">
+      <DependentUpon>Monthly service report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Net profit.resx">
+      <DependentUpon>Net profit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -111,6 +205,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales details.resx">
+      <DependentUpon>Sales details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="service details.resx">
+      <DependentUpon>service details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test drive.resx">
+      <DependentUpon>test drive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicle owner.resx">
+      <DependentUpon>vehicle owner.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -43,8 +43,8 @@ namespace FInal_project
         private void button1_Click(object sender, EventArgs e)
         {
             // Clear all textboxes in the form
-            textBox1.Clear();
-            textBox2.Clear();
+            tbUsername.Clear();
+            tbSecurityKey.Clear();
 
        
         }
@@ -52,8 +52,8 @@ namespace FInal_project
         private void button2_Click(object sender, EventArgs e)
         {
             cmd = new SqlCommand("SELECT userID, username,passwords,jobTitle.jobname FROM Users INNER JOIN jobTitle ON Users.userID = jobTitle.jobId where username=@username and passwords=@password;", con);
-            cmd.Parameters.AddWithValue("@username", textBox1.Text);
-            cmd.Parameters.AddWithValue("@password", textBox2.Text);
+            cmd.Parameters.AddWithValue("@username", tbUsername.Text);
+            cmd.Parameters.AddWithValue("@password", tbSecurityKey.Text);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);

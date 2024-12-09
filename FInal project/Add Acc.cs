@@ -46,17 +46,17 @@ namespace FInal_project
         }
         public void varible()
         {
-            EID = Convert.ToInt32(textBox1.Text);
-            Fname = textBox2.Text;
-            Lname = textBox3.Text;
-            Moblie = Convert.ToInt32(textBox4.Text);
-            NIC = textBox7.Text;
-            Email = textBox10.Text;
-            gender = comboBox1.Text;
-            address = textBox6.Text;
+            EID = Convert.ToInt32(tbId.Text);
+            Fname = tbFirstName.Text;
+            Lname = tbLastName.Text;
+            Moblie = Convert.ToInt32(tbMobile.Text);
+            NIC = tbNic.Text;
+            Email = tbEmail.Text;
+            gender = cbGender.Text;
+            address = tbAddress.Text;
             DOB = dateTimePicker1.Text; 
-            UN = textBox5.Text;
-            PW = textBox9.Text;
+            UN = tbUsername.Text;
+            PW = tbPassword.Text;
         }
 
         private void Add_Acc_Load(object sender, EventArgs e)
@@ -130,6 +130,11 @@ namespace FInal_project
         }
 
         private void textBox6_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

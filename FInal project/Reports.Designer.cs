@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnMonthlyServiceReport = new System.Windows.Forms.Button();
+            this.btnMonthlySalesReport = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAnnualServiceReport = new System.Windows.Forms.Button();
+            this.btnAnnualSalesReport = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnNetProfit = new System.Windows.Forms.Button();
+            this.btnInventoryReport = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -52,24 +52,24 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button5
+            // btnBack
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button5.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(26, 551);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(258, 64);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "◀️ Back";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnBack.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(26, 551);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(258, 64);
+            this.btnBack.TabIndex = 37;
+            this.btnBack.Text = "◀️ Back";
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(174)))), ((int)(((byte)(201)))));
             this.panel4.Controls.Add(this.panel7);
-            this.panel4.Controls.Add(this.button10);
-            this.panel4.Controls.Add(this.button8);
+            this.panel4.Controls.Add(this.btnMonthlyServiceReport);
+            this.panel4.Controls.Add(this.btnMonthlySalesReport);
             this.panel4.Location = new System.Drawing.Point(116, 139);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(274, 269);
@@ -94,38 +94,38 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Monthly Reports";
             // 
-            // button10
+            // btnMonthlyServiceReport
             // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button10.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button10.Location = new System.Drawing.Point(33, 190);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(219, 56);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Service Report";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.btnMonthlyServiceReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnMonthlyServiceReport.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMonthlyServiceReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.btnMonthlyServiceReport.Location = new System.Drawing.Point(33, 190);
+            this.btnMonthlyServiceReport.Name = "btnMonthlyServiceReport";
+            this.btnMonthlyServiceReport.Size = new System.Drawing.Size(219, 56);
+            this.btnMonthlyServiceReport.TabIndex = 15;
+            this.btnMonthlyServiceReport.Text = "Service Report";
+            this.btnMonthlyServiceReport.UseVisualStyleBackColor = false;
+            this.btnMonthlyServiceReport.Click += new System.EventHandler(this.button10_Click);
             // 
-            // button8
+            // btnMonthlySalesReport
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button8.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button8.Location = new System.Drawing.Point(33, 106);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(219, 56);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "Sales Report";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnMonthlySalesReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnMonthlySalesReport.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMonthlySalesReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.btnMonthlySalesReport.Location = new System.Drawing.Point(33, 106);
+            this.btnMonthlySalesReport.Name = "btnMonthlySalesReport";
+            this.btnMonthlySalesReport.Size = new System.Drawing.Size(219, 56);
+            this.btnMonthlySalesReport.TabIndex = 12;
+            this.btnMonthlySalesReport.Text = "Sales Report";
+            this.btnMonthlySalesReport.UseVisualStyleBackColor = false;
+            this.btnMonthlySalesReport.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(174)))), ((int)(((byte)(201)))));
             this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.btnAnnualServiceReport);
+            this.panel3.Controls.Add(this.btnAnnualSalesReport);
             this.panel3.Location = new System.Drawing.Point(449, 139);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(274, 269);
@@ -150,38 +150,38 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Annual Reports";
             // 
-            // button3
+            // btnAnnualServiceReport
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button3.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button3.Location = new System.Drawing.Point(29, 190);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 56);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Service Report";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnAnnualServiceReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnAnnualServiceReport.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnualServiceReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.btnAnnualServiceReport.Location = new System.Drawing.Point(29, 190);
+            this.btnAnnualServiceReport.Name = "btnAnnualServiceReport";
+            this.btnAnnualServiceReport.Size = new System.Drawing.Size(219, 56);
+            this.btnAnnualServiceReport.TabIndex = 7;
+            this.btnAnnualServiceReport.Text = "Service Report";
+            this.btnAnnualServiceReport.UseVisualStyleBackColor = false;
+            this.btnAnnualServiceReport.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnAnnualSalesReport
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button4.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button4.Location = new System.Drawing.Point(29, 106);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(219, 56);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Sales Report";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAnnualSalesReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnAnnualSalesReport.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnualSalesReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.btnAnnualSalesReport.Location = new System.Drawing.Point(29, 106);
+            this.btnAnnualSalesReport.Name = "btnAnnualSalesReport";
+            this.btnAnnualSalesReport.Size = new System.Drawing.Size(219, 56);
+            this.btnAnnualSalesReport.TabIndex = 8;
+            this.btnAnnualSalesReport.Text = "Sales Report";
+            this.btnAnnualSalesReport.UseVisualStyleBackColor = false;
+            this.btnAnnualSalesReport.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(174)))), ((int)(((byte)(201)))));
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnNetProfit);
+            this.panel1.Controls.Add(this.btnInventoryReport);
             this.panel1.Location = new System.Drawing.Point(780, 139);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(274, 269);
@@ -206,31 +206,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Other Reports";
             // 
-            // button1
+            // btnNetProfit
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button1.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button1.Location = new System.Drawing.Point(33, 190);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 56);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Net Profit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnNetProfit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnNetProfit.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNetProfit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.btnNetProfit.Location = new System.Drawing.Point(33, 190);
+            this.btnNetProfit.Name = "btnNetProfit";
+            this.btnNetProfit.Size = new System.Drawing.Size(219, 56);
+            this.btnNetProfit.TabIndex = 15;
+            this.btnNetProfit.Text = "Net Profit";
+            this.btnNetProfit.UseVisualStyleBackColor = false;
+            this.btnNetProfit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnInventoryReport
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
-            this.button2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
-            this.button2.Location = new System.Drawing.Point(33, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 56);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Inventory Report";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnInventoryReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(120)))));
+            this.btnInventoryReport.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventoryReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
+            this.btnInventoryReport.Location = new System.Drawing.Point(33, 106);
+            this.btnInventoryReport.Name = "btnInventoryReport";
+            this.btnInventoryReport.Size = new System.Drawing.Size(219, 56);
+            this.btnInventoryReport.TabIndex = 12;
+            this.btnInventoryReport.Text = "Inventory Report";
+            this.btnInventoryReport.UseVisualStyleBackColor = false;
+            this.btnInventoryReport.Click += new System.EventHandler(this.button2_Click);
             // 
             // Reports
             // 
@@ -241,7 +241,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnBack);
             this.Name = "Reports";
             this.Text = "Reports";
             this.panel4.ResumeLayout(false);
@@ -258,21 +258,21 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnMonthlyServiceReport;
+        private System.Windows.Forms.Button btnMonthlySalesReport;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAnnualServiceReport;
+        private System.Windows.Forms.Button btnAnnualSalesReport;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnNetProfit;
+        private System.Windows.Forms.Button btnInventoryReport;
     }
 }

@@ -204,19 +204,20 @@ namespace FInal_project
             con.Open();
             EID = Convert.ToInt32(textBox8.Text);
             cmd = new SqlCommand("SELECT userID FROM Employee WHERE Employee.emp_id = @EID;", con);
-            add();
+            cmd.Parameters.AddWithValue("@EID", EID); // Ensure parameter is added
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             int userID = Convert.ToInt32(dt.Rows[0][0]);
             newUserID = userID;
-            cmd = new SqlCommand("Delete  Employee WHERE Employee.emp_id = @EID;", con);
-            cmd.Parameters.AddWithValue("EID", EID);
+
+            cmd = new SqlCommand("DELETE FROM Employee WHERE Employee.emp_id = @EID;", con);
+            cmd.Parameters.AddWithValue("@EID", EID);
             cmd.ExecuteNonQuery();
             con.Close();
             con.Open();
-            cmd = new SqlCommand("Delete Users  where userID = @usi", con);
-            add();
+            cmd = new SqlCommand("DELETE FROM Users WHERE userID = @usi", con);
+            cmd.Parameters.AddWithValue("@usi", userID); // Ensure parameter is added
             cmd.ExecuteNonQuery();
             Data();
             MessageBox.Show("Record Deleted - Done!!!");

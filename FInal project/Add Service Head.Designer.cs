@@ -33,11 +33,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbCity = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
-            this.tbDOB = new System.Windows.Forms.TextBox();
+            this.tbDob = new System.Windows.Forms.TextBox();
             this.tbMobile = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbName = new System.Windows.Forms.TextBox();
-            this.tbService = new System.Windows.Forms.TextBox();
+            this.tbServiceId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -77,11 +77,11 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(174)))), ((int)(((byte)(201)))));
             this.panel1.Controls.Add(this.tbCity);
             this.panel1.Controls.Add(this.tbAddress);
-            this.panel1.Controls.Add(this.tbDOB);
+            this.panel1.Controls.Add(this.tbDob);
             this.panel1.Controls.Add(this.tbMobile);
             this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Controls.Add(this.tbName);
-            this.panel1.Controls.Add(this.tbService);
+            this.panel1.Controls.Add(this.tbServiceId);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -110,14 +110,14 @@
             this.tbAddress.Size = new System.Drawing.Size(329, 35);
             this.tbAddress.TabIndex = 38;
             // 
-            // tbDOB
+            // tbDob
             // 
-            this.tbDOB.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDOB.Location = new System.Drawing.Point(516, 161);
-            this.tbDOB.Name = "tbDOB";
-            this.tbDOB.Size = new System.Drawing.Size(314, 35);
-            this.tbDOB.TabIndex = 37;
-            this.tbDOB.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.tbDob.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbDob.Location = new System.Drawing.Point(516, 161);
+            this.tbDob.Name = "tbDob";
+            this.tbDob.Size = new System.Drawing.Size(314, 35);
+            this.tbDob.TabIndex = 37;
+            this.tbDob.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // tbMobile
             // 
@@ -143,13 +143,13 @@
             this.tbName.Size = new System.Drawing.Size(222, 35);
             this.tbName.TabIndex = 34;
             // 
-            // tbService
+            // tbServiceId
             // 
-            this.tbService.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbService.Location = new System.Drawing.Point(465, 15);
-            this.tbService.Name = "tbService";
-            this.tbService.Size = new System.Drawing.Size(156, 35);
-            this.tbService.TabIndex = 33;
+            this.tbServiceId.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbServiceId.Location = new System.Drawing.Point(465, 15);
+            this.tbServiceId.Name = "tbServiceId";
+            this.tbServiceId.Size = new System.Drawing.Size(156, 35);
+            this.tbServiceId.TabIndex = 33;
             // 
             // label8
             // 
@@ -370,11 +370,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbCity;
         private System.Windows.Forms.TextBox tbAddress;
-        private System.Windows.Forms.TextBox tbDOB;
+        private System.Windows.Forms.TextBox tbDob;
         private System.Windows.Forms.TextBox tbMobile;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbName;
-        private System.Windows.Forms.TextBox tbService;
+        private System.Windows.Forms.TextBox tbServiceId;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

@@ -5,46 +5,46 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FInal_project
 {
-    public partial class Add_Service_Head : Form
+    public partial class Add_Vehicles : Form
     {
+
         private SqlConnection con;
         private int id;
-        private String name, city, email, address, mobile;
-        private DateTime dob;
+        private String vehicle_name, vehicle_no, type, model;
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
             {
-                id = Convert.ToInt32(tbServiceId.Text); // Assuming the ID is required for updating the record
-                name = tbName.Text;
-                city = tbCity.Text;
-                email = tbEmail.Text;
-                address = tbAddress.Text;
-                mobile = tbMobile.Text;
-                dob = DateTime.Parse(tbDob.Text);
+                id = Convert.ToInt32(tbId.Text); // Assuming the ID is required for updating the record
+                vehicle_name = tbName.Text;
+                vehicle_no = tbNo.Text;
+                type = tbType.Text;
+                model = tbModel.Text;
+
 
                 con = DatabaseConnection.Instance.GetConnection();
                 con.Open();
 
-                string query = "UPDATE vehicleOwners SET Name = @Name, Email = @Email, Mobile = @Mobile, DateOfBirth = @DateOfBirth, City = @City, Address = @Address WHERE VehicleOwnerID = @ID";
+                string query = "UPDATE vehicles SET Name = @vehicle_name, No = @vehicle_no, Type = @type, Model = @model WHERE VehicleID = @Id";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
                 // Use parameters to avoid SQL injection
                 cmd.Parameters.AddWithValue("@ID", id);
-                cmd.Parameters.AddWithValue("@Name", name);
-                cmd.Parameters.AddWithValue("@Email", email);
-                cmd.Parameters.AddWithValue("@Mobile", mobile);
-                cmd.Parameters.AddWithValue("@DateOfBirth", dob);
-                cmd.Parameters.AddWithValue("@City", city);
-                cmd.Parameters.AddWithValue("@Address", address);
+                cmd.Parameters.AddWithValue("@vehicle_name", vehicle_name);
+                cmd.Parameters.AddWithValue("@vehicle_no", vehicle_no);
+                cmd.Parameters.AddWithValue("@type", type);
+                cmd.Parameters.AddWithValue("@model", model);
+
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 
@@ -72,12 +72,12 @@ namespace FInal_project
         {
             try
             {
-                id = Convert.ToInt32(tbServiceId.Text); // Only the ID is required for deletion
+                id = Convert.ToInt32(tbId.Text); // Only the ID is required for deletion
 
                 con = DatabaseConnection.Instance.GetConnection();
                 con.Open();
 
-                string query = "DELETE FROM vehicleOwners WHERE VehicleOwnerID = @ID";
+                string query = "DELETE FROM vehicles WHERE VehicleID = @ID";
 
                 SqlCommand cmd = new SqlCommand(query, con);
 
@@ -108,40 +108,35 @@ namespace FInal_project
 
         private void clearTextBoxes()
         {
-            tbServiceId.Clear();
+            tbId.Clear();
             tbName.Clear();
-            tbEmail.Clear();
-            tbCity.Clear();
-            tbDob.Clear();
-            tbAddress.Clear();
-            tbMobile.Clear();
+            tbNo.Clear();
+            tbModel.Clear();
+            tbType.Clear();
+            
         }
 
-
-        public Add_Service_Head()
+        public Add_Vehicles()
         {
             InitializeComponent();
         }
 
-        private void Add_Service_Head_Load(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            //hide form close button
-            this.ControlBox = false;
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            id = Convert.ToInt32(tbServiceId.Text);
-            name = tbName.Text;
-            city = tbCity.Text;
-            email = tbEmail.Text;
-            address = tbAddress.Text;
-            mobile = tbMobile.Text;
-            dob = DateTime.Parse(tbDob.Text);
+            id = Convert.ToInt32(tbId.Text);
+            vehicle_name = tbName.Text;
+            vehicle_no = tbNo.Text;
+            type = tbType.Text;
+            model = tbModel.Text;
 
             con = DatabaseConnection.Instance.GetConnection();
             con.Open();
-            string query = "INSERT INTO vehicleOwners (Name, Email, Mobile, DateOfBirth, City, Address) VALUES ('" + name + "', '" + email + "', '" + mobile + "', '" + dob + "', '" + city + "', '" + address + "')";
+            string query = "INSERT INTO vehicles (Name, No, Model, Type) VALUES ('" + vehicle_name + "', '" + vehicle_no + "', '" + model + "', '" + type + "')";
 
             SqlCommand cmd = new SqlCommand(query, con);
 
@@ -161,9 +156,5 @@ namespace FInal_project
 
         }
 
-        //private void textBox5_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
     }
 }

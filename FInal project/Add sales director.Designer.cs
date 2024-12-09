@@ -48,16 +48,16 @@
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAddNewSales = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbCity
@@ -67,6 +67,7 @@
             this.tbCity.Name = "tbCity";
             this.tbCity.Size = new System.Drawing.Size(222, 35);
             this.tbCity.TabIndex = 39;
+            this.tbCity.TextChanged += new System.EventHandler(this.tbCity_TextChanged);
             // 
             // tbAddress
             // 
@@ -75,6 +76,7 @@
             this.tbAddress.Name = "tbAddress";
             this.tbAddress.Size = new System.Drawing.Size(329, 35);
             this.tbAddress.TabIndex = 38;
+            this.tbAddress.TextChanged += new System.EventHandler(this.tbAddress_TextChanged);
             // 
             // tbDOB
             // 
@@ -83,6 +85,7 @@
             this.tbDOB.Name = "tbDOB";
             this.tbDOB.Size = new System.Drawing.Size(314, 35);
             this.tbDOB.TabIndex = 37;
+            this.tbDOB.TextChanged += new System.EventHandler(this.tbDOB_TextChanged);
             // 
             // tbMobile
             // 
@@ -91,6 +94,7 @@
             this.tbMobile.Name = "tbMobile";
             this.tbMobile.Size = new System.Drawing.Size(222, 35);
             this.tbMobile.TabIndex = 36;
+            this.tbMobile.TextChanged += new System.EventHandler(this.tbMobile_TextChanged);
             // 
             // tbEmail
             // 
@@ -99,6 +103,7 @@
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(329, 35);
             this.tbEmail.TabIndex = 35;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // tbName
             // 
@@ -107,6 +112,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(222, 35);
             this.tbName.TabIndex = 34;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // tbSales
             // 
@@ -115,6 +121,7 @@
             this.tbSales.Name = "tbSales";
             this.tbSales.Size = new System.Drawing.Size(156, 35);
             this.tbSales.TabIndex = 33;
+            this.tbSales.TextChanged += new System.EventHandler(this.tbSales_TextChanged);
             // 
             // label8
             // 
@@ -125,6 +132,7 @@
             this.label8.Size = new System.Drawing.Size(61, 22);
             this.label8.TabIndex = 32;
             this.label8.Text = "City :";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -135,6 +143,7 @@
             this.label7.Size = new System.Drawing.Size(100, 22);
             this.label7.TabIndex = 31;
             this.label7.Text = "Address :";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -145,6 +154,7 @@
             this.label6.Size = new System.Drawing.Size(150, 22);
             this.label6.TabIndex = 30;
             this.label6.Text = "Date Of Birth :";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -155,6 +165,7 @@
             this.label5.Size = new System.Drawing.Size(88, 22);
             this.label5.TabIndex = 29;
             this.label5.Text = "Mobile :";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -165,6 +176,7 @@
             this.label4.Size = new System.Drawing.Size(76, 22);
             this.label4.TabIndex = 28;
             this.label4.Text = "Email :";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -175,6 +187,7 @@
             this.label3.Size = new System.Drawing.Size(78, 22);
             this.label3.TabIndex = 27;
             this.label3.Text = "Name :";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -185,6 +198,7 @@
             this.label2.Size = new System.Drawing.Size(184, 22);
             this.label2.TabIndex = 26;
             this.label2.Text = "Sales Director ID :";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
@@ -207,6 +221,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(867, 283);
             this.panel1.TabIndex = 39;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnSearch
             // 
@@ -228,6 +243,7 @@
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(118, 35);
             this.tbSearch.TabIndex = 37;
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
             // btnBack
             // 
@@ -252,17 +268,7 @@
             this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 35;
             this.label1.Text = "Go Future";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnDelete
             // 
@@ -275,6 +281,7 @@
             this.btnDelete.TabIndex = 33;
             this.btnDelete.Text = "❌ Delete Sales Director";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -287,6 +294,7 @@
             this.btnUpdate.TabIndex = 32;
             this.btnUpdate.Text = "📝 Update Sales Director";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAddNewSales
             // 
@@ -299,6 +307,7 @@
             this.btnAddNewSales.TabIndex = 31;
             this.btnAddNewSales.Text = "➕Add New Sales Director";
             this.btnAddNewSales.UseVisualStyleBackColor = false;
+            this.btnAddNewSales.Click += new System.EventHandler(this.btnAddNewSales_Click);
             // 
             // btnView
             // 
@@ -311,6 +320,7 @@
             this.btnView.TabIndex = 30;
             this.btnView.Text = "☰ View";
             this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // dataGridView1
             // 
@@ -321,6 +331,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(867, 210);
             this.dataGridView1.TabIndex = 29;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label9
             // 
@@ -333,6 +344,19 @@
             this.label9.TabIndex = 40;
             this.label9.Text = "Sales Director\r\nDetails";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Add_sales_director
             // 
@@ -357,8 +381,8 @@
             this.Load += new System.EventHandler(this.Add_sales_director_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

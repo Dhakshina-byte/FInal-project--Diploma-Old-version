@@ -65,5 +65,11 @@ namespace FInal_project
             Monthly_service_report add_im = new Monthly_service_report();
             add_im.ShowDialog();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CEO_Dashbord ceo = new CEO_Dashbord();
+        }
     }
 }

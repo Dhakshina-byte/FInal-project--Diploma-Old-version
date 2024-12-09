@@ -26,5 +26,12 @@ namespace FInal_project
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CEO_Dashbord ceo = new CEO_Dashbord();
+            ceo.Show();
+        }
     }
 }

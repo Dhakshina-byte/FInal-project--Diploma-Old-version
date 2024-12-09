@@ -13,7 +13,9 @@ namespace FInal_project
 {
     public partial class vehicle_owner : Form
     {
-        private SqlConnection con;
+        public SqlConnection con;
+        public SqlDataReader DR;
+        public SqlCommand cmd;
         private int id;
         private String name, city, email, address, mobile;
         private DateTime dob;
@@ -30,7 +32,6 @@ namespace FInal_project
                 mobile = tbMobile.Text;
                 dob = DateTime.Parse(tbDob.Text);
 
-                con = DatabaseConnection.Instance.GetConnection();
                 con.Open();
 
                 string query = "UPDATE vehicleOwners SET Name = @Name, Email = @Email, Mobile = @Mobile, DateOfBirth = @DateOfBirth, City = @City, Address = @Address WHERE VehicleOwnerID = @ID";
@@ -74,7 +75,6 @@ namespace FInal_project
             {
                 id = Convert.ToInt32(tbId.Text); // Only the ID is required for deletion
 
-                con = DatabaseConnection.Instance.GetConnection();
                 con.Open();
 
                 string query = "DELETE FROM vehicleOwners WHERE VehicleOwnerID = @ID";
@@ -104,6 +104,12 @@ namespace FInal_project
                 con.Close();
                 clearTextBoxes();
             }
+        }
+
+        private void vehicle_owner_Load(object sender, EventArgs e)
+        {
+            con = new SqlConnection();
+            con.ConnectionString = "Data Source =OM3GA;Initial Catalog= CarSales&ServiceMangementSystem;Integrated Security =True";
         }
 
         private void clearTextBoxes()
@@ -137,7 +143,6 @@ namespace FInal_project
             mobile = tbMobile.Text;
             dob = DateTime.Parse(tbDob.Text);
 
-            con = DatabaseConnection.Instance.GetConnection();
             con.Open();
             string query = "INSERT INTO vehicleOwners (Name, Email, Mobile, DateOfBirth, City, Address) VALUES ('" + name + "', '" + email + "', '" + mobile + "', '" + dob + "', '" + city + "', '" + address + "')";
 

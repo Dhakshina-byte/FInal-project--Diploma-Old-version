@@ -82,6 +82,12 @@
     <Compile Include="Annual service report.Designer.cs">
       <DependentUpon>Annual service report.cs</DependentUpon>
     </Compile>
+    <Compile Include="Car sales System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Car sales System.Designer.cs">
+      <DependentUpon>Car sales System.cs</DependentUpon>
+    </Compile>
     <Compile Include="CEO Dashbord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Annual service report.resx">
       <DependentUpon>Annual service report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Car sales System.resx">
+      <DependentUpon>Car sales System.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CEO Dashbord.resx">
       <DependentUpon>CEO Dashbord.cs</DependentUpon>

@@ -15,7 +15,7 @@ namespace FInal_project
         private DatabaseConnection()
         {
             // Define your connection string here (update with your actual values)
-            _connectionString = "Server=localhost;Database=CarSales&ServiceManagementSystem;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true";
+            _connectionString = "Server=OM3GA;Database=CarSales&ServiceManagementSystem;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true";
         }
 
         // Public property to access the single instance

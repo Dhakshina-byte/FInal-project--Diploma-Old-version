@@ -16,5 +16,11 @@ namespace FInal_project
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CEO_Dashbord ceo = new CEO_Dashbord();
+        }
     }
 }

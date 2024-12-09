@@ -50,11 +50,12 @@ namespace FInal_project
             Fname = textBox2.Text;
             Lname = textBox3.Text;
             Moblie = Convert.ToInt32(textBox4.Text);
-            NIC = textBox4.Text;
-            Email = textBox5.Text;
-          
-            address = textBox7.Text;
-            UN = textBox8.Text;
+            NIC = textBox7.Text;
+            Email = textBox10.Text;
+            gender = comboBox1.Text;
+            address = textBox6.Text;
+            DOB = dateTimePicker1.Text; 
+            UN = textBox5.Text;
             PW = textBox9.Text;
         }
 
@@ -117,10 +118,17 @@ namespace FInal_project
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+
+           cmd = new SqlCommand("INSERT INTO Users(userID,username,passwords,jobId) VALUES (1,'Hemantha','Hemantha12',1);",con);
+            cmd = new SqlCommand("INSERT INTO Employee(emp_id, emp_fname,emp_lname,NIC_ID, E_mail,DOB,mobile_number, gender,userID,department_ID, jobID,EAddress)VALUES (@EID,@Fname,@Lname,@NIC,@Email,@DOB,@Moblie,@gender,@address,1,2,2);", con);
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged_1(object sender, EventArgs e)
         {
 
         }

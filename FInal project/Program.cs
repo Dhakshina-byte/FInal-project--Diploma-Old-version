@@ -16,7 +16,7 @@ namespace FInal_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vehicle_owner());
+            Application.Run(new Login());
         }
     }
 }

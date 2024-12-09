@@ -45,7 +45,7 @@ namespace FInal_project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("SELECT userID, username,passwords,jobTitle.jobname FROM Users INNER JOIN jobTitle ON Users.userID = jobTitle.jobId where username=@username and passwords=@password;", con);
+            cmd = new SqlCommand("SELECT userID, username,passwords,jobTitle.jobname FROM Users INNER JOIN jobTitle ON Users.jobId = jobTitle.jobId where username=@username and passwords=@password;", con);
             cmd.Parameters.AddWithValue("@username", textBox1.Text);
             cmd.Parameters.AddWithValue("@password", textBox2.Text);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);

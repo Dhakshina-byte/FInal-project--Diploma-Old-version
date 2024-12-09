@@ -104,42 +104,6 @@ namespace FInal_project
             Data();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (textBox8.Text == "")
-            {
-                Data();
-            }
-            else
-            {
-                SqlCommand cmd = new SqlCommand("SELECT Employee.emp_id , Employee.emp_fname ,Employee.emp_lname,Employee.NIC_ID,Employee.E_mail,Employee.DOB, Employee.mobile_number, Employee.gender,Employee.EAddress,jobTitle.jobname,Users. username,Users.passwords,Department.department_name,Department.location_name FROM Employee INNER JOIN jobTitle  ON  Employee.jobId = jobTitle.jobId INNER JOIN Users ON Employee.userID = Users.userID INNER JOIN Department ON Employee.department_ID = Department.department_id  WHERE jobTitle.jobname ='Sales Director'AND Employee.emp_id = @EID", con);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                EID = Convert.ToInt32(textBox8.Text);
-                cmd.Parameters.AddWithValue("EID", EID);
-                con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                DataTable dt = new DataTable();
-
-                while (dr.Read())
-                {
-                    textBox1.Text = dr["emp_id"].ToString();
-                    textBox2.Text = dr["emp_fname"].ToString();
-                    textBox3.Text = dr["emp_lname"].ToString();
-                    textBox4.Text = dr["mobile_number"].ToString();
-                    textBox7.Text = dr["NIC_ID"].ToString();
-                    textBox10.Text = dr["E_mail"].ToString();
-                    comboBox1.Text = dr["gender"].ToString();
-                    textBox6.Text = dr["EAddress"].ToString();
-                    dateTimePicker1.Text = dr["DOB"].ToString();
-                    textBox5.Text = dr["username"].ToString();
-                    textBox9.Text = dr["passwords"].ToString();
-                }
-                con.Close();
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-                con.Open();
-            }
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -213,11 +177,6 @@ namespace FInal_project
             MessageBox.Show("Record Deleted - Done!!!");
             clear();
             con.Close();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void tbAddress_TextChanged(object sender, EventArgs e)
@@ -338,6 +297,44 @@ namespace FInal_project
         private void tbCity_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+
+            if (textBox8.Text == "")
+            {
+                Data();
+            }
+            else
+            {
+                SqlCommand cmd = new SqlCommand("SELECT Employee.emp_id , Employee.emp_fname ,Employee.emp_lname,Employee.NIC_ID,Employee.E_mail,Employee.DOB, Employee.mobile_number, Employee.gender,Employee.EAddress,jobTitle.jobname,Users. username,Users.passwords,Department.department_name,Department.location_name FROM Employee INNER JOIN jobTitle  ON  Employee.jobId = jobTitle.jobId INNER JOIN Users ON Employee.userID = Users.userID INNER JOIN Department ON Employee.department_ID = Department.department_id  WHERE jobTitle.jobname ='Sales Director'AND Employee.emp_id = @EID", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                EID = Convert.ToInt32(textBox8.Text);
+                cmd.Parameters.AddWithValue("EID", EID);
+                con.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+
+                while (dr.Read())
+                {
+                    textBox1.Text = dr["emp_id"].ToString();
+                    textBox2.Text = dr["emp_fname"].ToString();
+                    textBox3.Text = dr["emp_lname"].ToString();
+                    textBox4.Text = dr["mobile_number"].ToString();
+                    textBox7.Text = dr["NIC_ID"].ToString();
+                    textBox10.Text = dr["E_mail"].ToString();
+                    comboBox1.Text = dr["gender"].ToString();
+                    textBox6.Text = dr["EAddress"].ToString();
+                    dateTimePicker1.Text = dr["DOB"].ToString();
+                    textBox5.Text = dr["username"].ToString();
+                    textBox9.Text = dr["passwords"].ToString();
+                }
+                con.Close();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Open();
+            }
         }
     }
 }

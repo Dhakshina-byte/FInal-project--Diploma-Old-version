@@ -138,6 +138,7 @@
     <Compile Include="service details.Designer.cs">
       <DependentUpon>service details.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="test drive.cs">
       <SubType>Form</SubType>
     </Compile>

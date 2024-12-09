@@ -145,6 +145,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Sales_details";
             this.Text = "Sales_details";
+            this.Load += new System.EventHandler(this.Sales_details_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

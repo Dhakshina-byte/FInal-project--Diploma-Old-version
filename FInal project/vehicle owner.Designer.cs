@@ -356,6 +356,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "vehicle_owner";
             this.Text = "vehicle_owner";
+            this.Load += new System.EventHandler(this.vehicle_owner_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

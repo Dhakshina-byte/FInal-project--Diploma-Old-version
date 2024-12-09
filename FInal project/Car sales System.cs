@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace FInal_project
 {
-    public partial class Sales_details : Form
+    public partial class Car_sales_System : Form
     {
-        public Sales_details()
+        public Car_sales_System()
         {
             InitializeComponent();
-        }
-
-        private void Sales_details_Load(object sender, EventArgs e)
-        {
-            this.Hide();
-            CEO_Dashbord ceo = new CEO_Dashbord();
         }
     }
 }

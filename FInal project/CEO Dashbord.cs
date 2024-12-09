@@ -105,7 +105,7 @@ namespace FInal_project
             //click service details button and go to service details form
             this.Hide();
             service_details add_im = new service_details();
-            add_im.ShowDialog();
+            add_im.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace FInal_project
             //click sales details button and go to sales details form
             this.Hide();
             Sales_details add_im = new Sales_details();
-            add_im.ShowDialog();
+            add_im.Show();
         }
     }
 }

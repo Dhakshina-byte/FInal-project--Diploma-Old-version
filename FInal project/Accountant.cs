@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace FInal_project
 {
-    public partial class test_drive : Form
+    public partial class Accountant : Form
     {
-        public test_drive()
+        public Accountant()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

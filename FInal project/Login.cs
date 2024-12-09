@@ -62,9 +62,11 @@ namespace FInal_project
                     CEO_Dashbord cd = new CEO_Dashbord();
                     cd.Show();
                 }
-                else if (usertype == "non")
+                else if (usertype == "Accountant")
                 {
-                    MessageBox.Show("wel non");
+                    this.Hide();
+                    Accountant ad = new Accountant();
+                    ad.Show();
                 }
                 else
                 {

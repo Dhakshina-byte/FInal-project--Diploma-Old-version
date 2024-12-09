@@ -50,11 +50,11 @@ namespace FInal_project
             Fname = textBox2.Text;
             Lname = textBox3.Text;
             Moblie = Convert.ToInt32(textBox4.Text);
-            NIC = textBox4.Text;
+            NIC = textBox7.Text;
             Email = textBox5.Text;
-          
-            address = textBox7.Text;
-            UN = textBox8.Text;
+            gender = comboBox1.Text;
+            address = textBox6.Text;
+            UN = textBox5.Text;
             PW = textBox9.Text;
         }
 

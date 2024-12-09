@@ -118,8 +118,15 @@ namespace FInal_project
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-           cmd = new SqlCommand("INSERT INTO Users(userID,username,passwords,jobId) VALUES (1,'Hemantha','Hemantha12',1);",con);
+            con.Open();
+            cmd = new SqlCommand("SELECT MAX(userID)FROM Users;", con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            int userID = Convert.ToInt32(dt.Rows[0][0]);
+            userID++;
+            con.Close();
+            cmd = new SqlCommand("INSERT INTO Users(userID,username,passwords,jobId) VALUES (@userID,@UN,@PW,1);", con);
             cmd = new SqlCommand("INSERT INTO Employee(emp_id, emp_fname,emp_lname,NIC_ID, E_mail,DOB,mobile_number, gender,userID,department_ID, jobID,EAddress)VALUES (@EID,@Fname,@Lname,@NIC,@Email,@DOB,@Moblie,@gender,@address,1,2,2);", con);
         }
 

@@ -88,6 +88,12 @@
     <Compile Include="CEO Dashbord.Designer.cs">
       <DependentUpon>CEO Dashbord.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add Vehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Vehicles.Designer.cs">
+      <DependentUpon>Add Vehicles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add Service Head.resx">
       <DependentUpon>Add Service Head.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Vehicles.resx">
+      <DependentUpon>Add Vehicles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Annual sales report.resx">
       <DependentUpon>Annual sales report.cs</DependentUpon>

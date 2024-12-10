@@ -332,6 +332,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "test_drive";
             this.Text = "test_drive";
+            this.Load += new System.EventHandler(this.test_drive_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

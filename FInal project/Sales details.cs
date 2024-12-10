@@ -131,5 +131,12 @@ namespace FInal_project
                 MessageBox.Show("Please select a car to view the invoice.");
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CEO_Dashbord cEO_Dashbord = new CEO_Dashbord(); 
+            cEO_Dashbord.Show();
+        }
     }
 }

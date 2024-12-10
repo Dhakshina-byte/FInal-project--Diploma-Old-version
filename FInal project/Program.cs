@@ -16,7 +16,15 @@ namespace FInal_project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Sales_details());
+=======
+<<<<<<< Updated upstream
+            Application.Run(new vehicle_owner());
+=======
+            Application.Run(new Login());
+>>>>>>> Stashed changes
+>>>>>>> Dhakshina1
         }
     }
 }

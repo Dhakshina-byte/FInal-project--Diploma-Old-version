@@ -288,7 +288,7 @@ namespace FInal_project
         {
 
         }
-
+         
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -334,7 +334,13 @@ namespace FInal_project
                 da.Fill(dt);
                 dataGridView1.DataSource = dt;
                 con.Open();
+                clear();
             }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

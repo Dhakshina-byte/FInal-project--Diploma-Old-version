@@ -181,6 +181,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(304, 22);
             this.dateTimePicker1.TabIndex = 62;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // textBox7
             // 
@@ -297,9 +298,9 @@
             this.label2.Font = new System.Drawing.Font("Lucida Sans Unicode", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(9, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 21);
+            this.label2.Size = new System.Drawing.Size(171, 21);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Accountant ID :";
+            this.label2.Text = "Sales DirectorID :";
             // 
             // button6
             // 

@@ -26,5 +26,10 @@ namespace FInal_project
         {
 
         }
+
+        private void test_drive_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

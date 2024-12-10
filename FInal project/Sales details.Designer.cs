@@ -36,9 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnView = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.carTable = new System.Windows.Forms.DataGridView();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carTable)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -118,16 +119,27 @@
             this.btnView.TabIndex = 43;
             this.btnView.Text = "☰ View";
             this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
-            // dataGridView1
+            // carTable
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(34, 155);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1085, 362);
-            this.dataGridView1.TabIndex = 42;
+            this.carTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.carTable.Location = new System.Drawing.Point(34, 155);
+            this.carTable.Name = "carTable";
+            this.carTable.RowHeadersWidth = 51;
+            this.carTable.RowTemplate.Height = 24;
+            this.carTable.Size = new System.Drawing.Size(1085, 362);
+            this.carTable.TabIndex = 42;
+            // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(334, 171);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(945, 346);
+            this.crystalReportViewer1.TabIndex = 50;
             // 
             // Sales_details
             // 
@@ -135,6 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(214)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(1155, 627);
+            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.tbSearch);
@@ -142,12 +155,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.carTable);
             this.Name = "Sales_details";
             this.Text = "Sales_details";
             this.Load += new System.EventHandler(this.Sales_details_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.carTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +175,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnView;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView carTable;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
     }
 }
